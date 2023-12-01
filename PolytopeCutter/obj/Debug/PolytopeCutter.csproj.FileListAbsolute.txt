@@ -1,0 +1,7 @@
+C:\Users\necro\Documents\C# stuff\PolytopeCutter\bin\Debug\PolytopeCutter.exe.config
+C:\Users\necro\Documents\C# stuff\PolytopeCutter\bin\Debug\PolytopeCutter.exe
+C:\Users\necro\Documents\C# stuff\PolytopeCutter\bin\Debug\PolytopeCutter.pdb
+C:\Users\necro\Documents\C# stuff\PolytopeCutter\obj\Debug\PolytopeCutter.csprojAssemblyReference.cache
+C:\Users\necro\Documents\C# stuff\PolytopeCutter\obj\Debug\PolytopeCutter.csproj.CoreCompileInputs.cache
+C:\Users\necro\Documents\C# stuff\PolytopeCutter\obj\Debug\PolytopeCutter.exe
+C:\Users\necro\Documents\C# stuff\PolytopeCutter\obj\Debug\PolytopeCutter.pdb
