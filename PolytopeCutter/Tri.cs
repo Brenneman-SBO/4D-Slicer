@@ -24,5 +24,4 @@ class Tri//TODO refactor Tri and Tet as children of abstract Simplex
             pts[i] = pts[i].trans(mat);
         }
     }
-
 }

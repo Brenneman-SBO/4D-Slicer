@@ -62,4 +62,14 @@ class Tet
             pts[i] = f(pts[i]);
         }
     }
+    public void trans(Mat m)
+    {
+        if (m.d0 != 5 || m.d1 != 5) throw new ArgumentException();
+        for (int i=0; i<4; i++)
+        {
+            VecN va = new VecN(new double[] { pts[i][0], pts[i][1], pts[i][2], pts[i][3], 1.0 });
+            va = va * m;
+            pts[i] = new VecN(new double[] { va[0], va[1], va[2], va[3] });
+        }
+    }
 }

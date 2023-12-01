@@ -20,6 +20,32 @@ class Mat : IEquatable<Mat>
         val = new double[x, y];
     }
 
+    public Mat T()
+    {
+        Mat o = new Mat(d1, d0);
+        for (int i = 0; i < d0; i++)
+            for (int j = 0; j < d1; j++)
+                o[j, i] = val[i, j];
+        return o;
+    }
+    public static Mat rotation(int s, int f, double Θ)
+    {
+        if (s < 0 || f < 0 || s > 3 || f > 3 || s == f) throw new ArgumentException();
+        Mat o = new Mat(5, 5);
+        o[s, s] = o[f, f] = Math.Cos(Θ);
+        o[s, f] = -Math.Sin(Θ);
+        o[f, s] =  Math.Sin(Θ);
+        return o;
+    }
+    public static Mat translation(VecN v)
+    {
+        if (v.dim != 4) throw new ArgumentException();
+        Mat o = new Mat(5, 5);
+        for (int i = 0; i < 4; i++)
+            o[i, i] = v[i];
+        return o;
+    }
+
     public double this[int x, int y]
     {
         get { return val[x, y]; }
@@ -55,6 +81,24 @@ class Mat : IEquatable<Mat>
     public static Mat operator *(Mat m, double c)
     {
         return c * m;
+    }
+    public static VecN operator *(VecN v, Mat m)
+    {
+        if (v.dim != m.d0) throw new InvalidOperationException();
+        VecN o = new VecN(m.d1);
+        for (int i = 0; i < m.d0; i++)
+            for (int j = 0; j < m.d1; j++)
+                o[j] += v[i] * m[i, j];
+        return o;
+    }
+    public static VecN operator *(Mat m, VecN v)
+    {
+        if (v.dim != m.d1) throw new InvalidOperationException();
+        VecN o = new VecN(m.d0);
+        for (int i = 0; i < m.d0; i++)
+            for (int j = 0; j < m.d1; j++)
+                o[i] += v[j] * m[i, j];
+        return o;
     }
     public static Mat operator -(Mat a)
     {

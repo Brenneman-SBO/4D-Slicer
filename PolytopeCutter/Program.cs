@@ -11,7 +11,11 @@ namespace PolytopeCutter
     {
         static void Main(string[] args)
         {
-            var hyperCube = GenerateHypercube(1.0);
+            List<Tet> hyperCube = GenerateHypercube(1.0);
+            VecN shift = new VecN(new double[] { -0.5, -0.5, -0.5, -0.5 });
+            Mat cumulation = Mat.translation(shift) * Mat.rotation(1, 0, Math.Atan(1)) * Mat.rotation(2, 0, Math.Atan(1/Math.Sqrt(2))) * Mat.rotation(3, 0, Math.Atan(1/Math.Sqrt(3)));
+            foreach (Tet tetra in hyperCube)
+                tetra.trans(cumulation);
 
             // Exports 4 dimensional shape to .obj file for visualization (does not merge things, deal with it)
 
@@ -131,10 +135,6 @@ namespace PolytopeCutter
                     }
                 }
             }
-            VecN shift = new VecN(new double[] { -0.9, -0.0, -0.0, -0.0 });
-            Func<VecN, VecN> Fshift = x => x + shift;
-            foreach (Tet tetra in TetList)
-                tetra.trans(Fshift);
             return TetList;
         }
     }
