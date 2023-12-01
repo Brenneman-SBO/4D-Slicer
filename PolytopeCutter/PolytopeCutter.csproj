@@ -45,8 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mat.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Simplex.cs" />
+    <Compile Include="Tet.cs" />
+    <Compile Include="Tri.cs" />
     <Compile Include="VecN.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolytopeCutter", "PolytopeC
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7F90F600-BB76-400B-95A9-80762822EF85}"
 	ProjectSection(SolutionItems) = preProject
+		Mat.cs = Mat.cs
+		Simplex.cs = Simplex.cs
+		Tet.cs = Tet.cs
+		Tri.cs = Tri.cs
 		VecN.cs = VecN.cs
 	EndProjectSection
 EndProject
