@@ -5,3 +5,10 @@ C:\Users\necro\Documents\C# stuff\PolytopeCutter\obj\Debug\PolytopeCutter.csproj
 C:\Users\necro\Documents\C# stuff\PolytopeCutter\obj\Debug\PolytopeCutter.csproj.CoreCompileInputs.cache
 C:\Users\necro\Documents\C# stuff\PolytopeCutter\obj\Debug\PolytopeCutter.exe
 C:\Users\necro\Documents\C# stuff\PolytopeCutter\obj\Debug\PolytopeCutter.pdb
+C:\Users\necro\Documents\GitHub\4D-Slicer\PolytopeCutter\bin\Debug\PolytopeCutter.exe.config
+C:\Users\necro\Documents\GitHub\4D-Slicer\PolytopeCutter\bin\Debug\PolytopeCutter.exe
+C:\Users\necro\Documents\GitHub\4D-Slicer\PolytopeCutter\bin\Debug\PolytopeCutter.pdb
+C:\Users\necro\Documents\GitHub\4D-Slicer\PolytopeCutter\obj\Debug\PolytopeCutter.csprojAssemblyReference.cache
+C:\Users\necro\Documents\GitHub\4D-Slicer\PolytopeCutter\obj\Debug\PolytopeCutter.csproj.CoreCompileInputs.cache
+C:\Users\necro\Documents\GitHub\4D-Slicer\PolytopeCutter\obj\Debug\PolytopeCutter.exe
+C:\Users\necro\Documents\GitHub\4D-Slicer\PolytopeCutter\obj\Debug\PolytopeCutter.pdb
